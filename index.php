@@ -31,14 +31,17 @@
   
     function getInfoMovie()
     {
-        return 'il film si chiama' .$this->name . 'fa parte del genere' .$this->genere . 'la trama è:' . $this->descrizione . 'Dura:' .$this->durata. 'La lingua attuale è:' .$this->lingua;
+        return 'il film si chiama' .$this->name . 'fa parte del genere' .$this->genere . 'la trama è:' .$this->descrizione . 'Dura:' .$this->durata. 'La lingua attuale è:' .$this->lingua;
     }
     
    
  }
 
- $Hunter = new Movie('HunterxHunter', 'Anime', 'Un ragazzo va alla ricerca del padre mai conosciuto', '3 ore', 'italiano');
+ $film1 = new Movie('HunterxHunter', 'Anime', 'Un ragazzo va alla ricerca del padre mai conosciuto', '3 ore', 'italiano');
+ $film2 = new Movie('Ritorno al futuro', 'fantascenza', 'Un ragazzo viaggia nel tempo con la macchina del futuro', '1 ora', 'inglese');
 
-
-var_dump($Hunter);
+$film1 -> getInfoMovie();
+var_dump($film1);
+$film2 -> getInfoMovie();
+var_dump($film2);
  ?>
