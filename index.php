@@ -16,6 +16,15 @@
     public $descrizone;
     public $durata;
     public $lingua;
-    public $anno;
+
+    function __construct(string $nome, string $genere, string $descrizione, string $durata, string $lingua)
+    {
+        $this->nome = $nome;
+        $this->genere = $genere;
+        $this->descrizione = $descrizione;
+        $this->durata = $durata;
+        $this->lingua = $lingua;
+
+    }
 
  }
