@@ -9,7 +9,7 @@
 
  <?php
 
- class Movie {
+ class Movie{
 /* variabili d'istanza pubbliche */
     public $nome;
     public $genere;
@@ -17,7 +17,7 @@
     public $durata;
     public $lingua;
 
-    function __construct(string $nome, string $genere, string $descrizione, string $durata, string $lingua)
+    function __construct($nome, $genere, $descrizione, $durata, $lingua)
     {
         $this->nome = $nome;
         $this->genere = $genere;
@@ -27,4 +27,18 @@
 
     }
 
+    /* creiamo almeno un metodo  */
+  
+    function getInfoMovie()
+    {
+        return 'il film si chiama' .$this->name . 'fa parte del genere' .$this->genere . 'la trama è:' . $this->descrizione . 'Dura:' .$this->durata. 'La lingua attuale è:' .$this->lingua;
+    }
+    
+   
  }
+
+ $Hunter = new Movie('HunterxHunter', 'Anime', 'Un ragazzo va alla ricerca del padre mai conosciuto', '3 ore', 'italiano');
+
+
+var_dump($Hunter);
+ ?>
